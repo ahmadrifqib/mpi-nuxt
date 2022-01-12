@@ -1,7 +1,7 @@
 <template>
 	<div class="bg-orange-50 py-3 px-20">
 		<div class="my-5">
-			<!-- <img src="static/MPI.png" alt="Mixa Perkasa Indonesia logo" class="h-36 w-auto" /> -->
+			<img src="static/MPI.png" alt="Mixa Perkasa Indonesia logo" class="h-36 w-auto" />
 		</div>
 		<div class="flex justify-between items-start mx-auto tracking-wide my-5">
 			<div class="">
