@@ -3682,13 +3682,13 @@ const _sfc_main$7 = {
           name: "PT Mixa Perkasa Indonesia"
         }
       ],
-      link: [{ rel: "icon", type: "image/x-icon", href: "static/favicon.ico" }]
+      link: [{ rel: "icon", type: "image/x-icon", href: "/static/favicon.ico" }]
     });
   }
 };
 function _sfc_ssrRender$7(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_NuxtPage = vue_cjs_prod.resolveComponent("NuxtPage");
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-orange-50 antialiased" }, _attrs))}>`);
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "antialiased bg-orange-50" }, _attrs))}>`);
   _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtPage, null, null, _parent));
   _push(`</div>`);
 }
@@ -3717,10 +3717,11 @@ const bootstrap$1 = /* @__PURE__ */ Object.freeze({
   [Symbol.toStringTag]: "Module",
   "default": bootstrap
 });
+const _imports_0 = "/_nuxt/assets/MPI.d3c0f33c.png";
 const _sfc_main$6 = {};
 function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_NuxtLink = vue_cjs_prod.resolveComponent("NuxtLink");
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-orange-50 flex justify-between items-center mx-auto py-3 px-20" }, _attrs))}><div></div><div class="font-semibold text-xl">`);
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "flex items-center justify-between px-20 py-3 mx-auto bg-orange-50" }, _attrs))}><div><img class="w-auto h-16"${serverRenderer.exports.ssrRenderAttr("src", _imports_0)} alt="Mixa Perkasa Indonesia logo"></div><div class="text-xl font-semibold">`);
   _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, {
     to: "/",
     class: "mr-5 hover:underline underline-offset-2"
@@ -3797,7 +3798,7 @@ const Header = /* @__PURE__ */ Object.freeze({
 });
 const _sfc_main$5 = {};
 function _sfc_ssrRender$5(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "bg-orange-50 py-3 px-20" }, _attrs))}><div class="my-5"></div><div class="flex justify-between items-start mx-auto tracking-wide my-5"><div class=""><div class="mb-7 text-3xl font-semibold">Perusahaan</div><div class="mb-3 text-lg font-medium hover:underline underline-offset-4 decoration-2"><a href="">Tentang</a></div><div class="mb-3 text-lg font-medium hover:underline underline-offset-4 decoration-2"><a href="">Proyek</a></div><div class="mb-3 text-lg font-medium hover:underline underline-offset-4 decoration-2"><a href="">Produk</a></div></div><div class="w-2/5"><div class="text-2xl font-bold uppercase mb-3">PT Mixa Perkasa Indonesia</div><div class="mb-4"> Emerald Avenue Comercial Park Blok EA-A27 Jl. Boulevard CBD Bintaro, RT. 003 RW. 007, Perigi Pondok Aren, Kota Tangerang Selatan Banten </div><div class="mb-4"><td><tr> Email </tr><tr> : </tr><tr> mpi@mixaperkasa.com </tr></td><div><tr> Telp </tr><tr> : </tr><tr> (021) 22210200 </tr></div></div></div></div><div class="flex justify-center items-center font-semibold my-5 text-lg"> \xA92022 PT Mixa Perkasa Indonesia </div></div>`);
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "px-20 py-3 bg-orange-50" }, _attrs))}><div class="my-5"><img${serverRenderer.exports.ssrRenderAttr("src", _imports_0)} alt="Mixa Perkasa Indonesia logo" class="w-auto h-36"></div><div class="flex items-start justify-between mx-auto my-5 tracking-wide"><div class=""><div class="text-3xl font-semibold mb-7">Perusahaan</div><div class="mb-3 text-lg font-medium hover:underline underline-offset-4 decoration-2"><a href="">Tentang</a></div><div class="mb-3 text-lg font-medium hover:underline underline-offset-4 decoration-2"><a href="">Proyek</a></div><div class="mb-3 text-lg font-medium hover:underline underline-offset-4 decoration-2"><a href="">Produk</a></div></div><div class="w-2/5"><div class="mb-3 text-2xl font-bold uppercase">PT Mixa Perkasa Indonesia</div><div class="mb-4"> Emerald Avenue Comercial Park Blok EA-A27 Jl. Boulevard CBD Bintaro, RT. 003 RW. 007, Perigi Pondok Aren, Kota Tangerang Selatan Banten </div><div class="mb-4"><td><tr> Email </tr><tr> : </tr><tr> mpi@mixaperkasa.com </tr></td><div><tr> Telp </tr><tr> : </tr><tr> (021) 22210200 </tr></div></div></div></div><div class="flex items-center justify-center my-5 text-lg font-semibold"> \xA92022 PT Mixa Perkasa Indonesia </div></div>`);
 }
 const _sfc_setup$5 = _sfc_main$5.setup;
 _sfc_main$5.setup = (props, ctx) => {

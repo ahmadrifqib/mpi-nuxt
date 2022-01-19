@@ -527,7 +527,7 @@ const htmlTemplate = (params) => `<!DOCTYPE html>
 </html>
 `;
 
-const STATIC_ASSETS_BASE = "/Users/ahmadrifqib/Developer/mpi/dist" + "/" + "1641981152";
+const STATIC_ASSETS_BASE = "/Users/ahmadrifqib/Developer/mpi/dist" + "/" + "1642057983";
 const PAYLOAD_JS = "/payload.js";
 const getClientManifest = cachedImport(() => import('./client.manifest.mjs'));
 const getSSRApp = cachedImport(() => import('./server.mjs'));

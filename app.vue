@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-orange-50 antialiased">
+	<div class="antialiased bg-orange-50">
 		<NuxtPage />
 	</div>
 </template>
@@ -16,7 +16,7 @@
 						name: "PT Mixa Perkasa Indonesia",
 					},
 				],
-				link: [{ rel: "icon", type: "image/x-icon", href: "static/favicon.ico" }],
+				link: [{ rel: "icon", type: "image/x-icon", href: "/static/favicon.ico" }],
 			});
 		},
 	};

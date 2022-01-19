@@ -1,7 +1,7 @@
 <template>
-	<div class="">
+	<div class="p-0 lg:mx-auto xl:px-20 container-none lg:container">
 		<Header />
-		<div class="container mx-auto">
+		<div class="">
 			<slot />
 		</div>
 		<Footer />

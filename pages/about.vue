@@ -1,9 +1,14 @@
 <template>
-	<div class="container flex flex-col justify-center tracking-wider leading-relaxed text-center mb-10">
-		<div class="h-96 w-auto mb-10 flex justify-center text-center items-center">
-			<div>Image</div>
+	<div class="container flex flex-col justify-center mb-10 leading-relaxed tracking-wider text-center">
+		<div class="flex items-center justify-center w-auto mb-10 text-center h-96">
+			<img
+				class="object-cover object-center w-full h-full"
+				src="https://picsum.photos/300
+"
+				alt="examples"
+			/>
 		</div>
-		<div class="mx-52 text-justify font-light text-xl">
+		<div class="mx-5 text-xl font-light text-justify md:mx-14 lg:mx-52">
 			<p class="mb-10">
 				Berawal dari sebuah usaha dalam lingkup kecil yang mempunyai pengalaman dalam bidang pembangunan dan
 				pekerasan tanah, sekarang berkembang menjadi sebuah perusahaan yang bergerak di bidang Kontraktor
@@ -25,17 +30,17 @@
 				Subkontraktor, Pihak Perbankan, dan SDM yang memiliki kompetensi yang tinggi)
 			</p>
 		</div>
-		<div class="mx-52">
+		<div class="mx-3 md:mx-14 lg:mx-52">
 			<div class="mb-10">
-				<div class="text-6xl font-bold my-5">VISI</div>
+				<div class="my-5 text-6xl font-bold">VISI</div>
 				<div class="text-xl font-light">
 					Menjadi perusahaan Kontraktor terpercaya yang dikenal akan integritas tinggi, selalu berinovasi dan
 					memuaskan pelayanan pada kepuasan klien.
 				</div>
 			</div>
 			<div class="">
-				<div class="text-6xl font-semibold my-5">MISI</div>
-				<ul class="text-xl text-left list-disc px-10 font-light">
+				<div class="my-5 text-6xl font-semibold">MISI</div>
+				<ul class="px-10 text-xl font-light text-left list-disc">
 					<li>
 						Selalu melakukan perubahan sesuai dengan nilai-nilai perkembangan Pembangunan di Dunia Modern.
 					</li>
