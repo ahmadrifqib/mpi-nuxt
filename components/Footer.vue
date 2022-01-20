@@ -1,10 +1,10 @@
 <template>
-	<div class="py-3 bg-orange-50">
+	<div class="py-3 mx-10 md:mx-5 lg:mx-auto bg-orange-50">
 		<div class="my-5">
 			<img src="/static/MPI.png" alt="Mixa Perkasa Indonesia logo" class="w-auto h-36" />
 		</div>
-		<div class="flex items-start justify-between mx-auto my-5 tracking-wide">
-			<div class="w-2/5">
+		<div class="flex flex-col items-start justify-between my-5 tracking-wide md:mx-5 lg:mx-auto lg:flex-row">
+			<div class="md:w-4/5 lg:w-2/5">
 				<div class="mb-3 text-2xl font-bold uppercase">PT Mixa Perkasa Indonesia</div>
 				<div class="mb-4">
 					Emerald Avenue Comercial Park Blok EA-A27 Jl. Boulevard CBD Bintaro, RT. 003 RW. 007, Perigi Pondok
@@ -35,16 +35,16 @@
 					</div>
 				</div>
 			</div>
-			<div class="space-y-3">
-				<div class="text-3xl font-semibold mb-7">Perusahaan</div>
-				<div class="text-lg font-medium hover:underline underline-offset-4 decoration-2">
-					<a href="">Tentang</a>
+			<div class="mt-10 space-y-2 md:space-y-3 lg:mt-0">
+				<div class="mb-4 text-3xl font-semibold lg:mb-7">Perusahaan</div>
+				<div class="text-lg font-medium hover:underline underline-offset-4 decoration-orange-600 decoration-2">
+					<NuxtLink to="/about">Tentang</NuxtLink>
 				</div>
-				<div class="text-lg font-medium hover:underline underline-offset-4 decoration-2">
-					<a href="">Proyek</a>
+				<div class="text-lg font-medium hover:underline underline-offset-4 decoration-orange-600 decoration-2">
+					<NuxtLink to="/project">Proyek</NuxtLink>
 				</div>
-				<div class="text-lg font-medium hover:underline underline-offset-4 decoration-2">
-					<a href="">Produk</a>
+				<div class="text-lg font-medium hover:underline underline-offset-4 decoration-orange-600 decoration-2">
+					<NuxtLink to="/product">Produk</NuxtLink>
 				</div>
 			</div>
 		</div>

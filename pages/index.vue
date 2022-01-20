@@ -2,11 +2,11 @@
 	<div>
 		<div class="flex items-center content-center justify-center w-auto h-full">
 			<swiper
-				class="items-center content-center w-screen h-auto mx-10 text-center"
+				class="items-center content-center w-screen h-auto mx-10 text-center rounded-lg shadow-2xl"
 				:spaceBetween="30"
 				:centeredSlides="true"
 				:autoplay="{
-					delay: 2500,
+					delay: 5000,
 					disableOnInteraction: false,
 				}"
 				:pagination="{
@@ -25,7 +25,11 @@
 				/></swiper-slide>
 			</swiper>
 		</div>
-		<div class="flex items-center justify-center w-auto border-2 border-black h-96">About</div>
+		<div
+			class="flex items-center justify-center w-auto font-mono text-2xl font-bold tracking-wide underline h-96 decoration-wavy decoration-orange-500 decoration-4 underline-offset-4"
+		>
+			Ini About
+		</div>
 	</div>
 </template>
 

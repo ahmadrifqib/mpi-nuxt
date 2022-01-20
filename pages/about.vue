@@ -2,7 +2,7 @@
 	<div class="container flex flex-col justify-center mb-10 leading-relaxed tracking-wider text-center">
 		<div class="flex items-center justify-center w-auto mb-10 text-center h-96">
 			<img
-				class="object-cover object-center w-full h-full"
+				class="object-cover object-center w-full h-full rounded-lg shadow-2xl"
 				src="https://picsum.photos/300
 "
 				alt="examples"
@@ -32,14 +32,14 @@
 		</div>
 		<div class="mx-3 md:mx-14 lg:mx-52">
 			<div class="mb-10">
-				<div class="my-5 text-6xl font-bold">VISI</div>
+				<div class="my-5 text-6xl font-bold tracking-wide text-orange-600">VISI</div>
 				<div class="text-xl font-light">
 					Menjadi perusahaan Kontraktor terpercaya yang dikenal akan integritas tinggi, selalu berinovasi dan
 					memuaskan pelayanan pada kepuasan klien.
 				</div>
 			</div>
 			<div class="">
-				<div class="my-5 text-6xl font-semibold">MISI</div>
+				<div class="my-5 text-6xl font-semibold tracking-wide text-orange-600">MISI</div>
 				<ul class="px-10 text-xl font-light text-left list-disc">
 					<li>
 						Selalu melakukan perubahan sesuai dengan nilai-nilai perkembangan Pembangunan di Dunia Modern.

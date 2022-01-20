@@ -1,13 +1,29 @@
 <template>
 	<div class="flex items-center justify-between py-3 mx-auto bg-orange-50">
 		<div class="ml-5 lg:ml-0">
-			<img class="w-auto h-16" src="/static/MPI.png" alt="Mixa Perkasa Indonesia logo" />
+			<img class="w-auto h-16" src="static/MPI.png" alt="Logo" />
 		</div>
 		<div class="hidden space-x-5 text-xl font-semibold lg:block">
-			<NuxtLink to="/" class="hover:underline underline-offset-2">Beranda</NuxtLink>
-			<NuxtLink to="/project" class="hover:underline underline-offset-2">Proyek</NuxtLink>
-			<NuxtLink to="/product" class="hover:underline underline-offset-2">Produk</NuxtLink>
-			<NuxtLink to="/about" class="hover:underline underline-offset-2">Tentang Kami</NuxtLink>
+			<NuxtLink
+				to="/"
+				class="hover:underline underline-offset-2 decoration-wavy decoration-orange-600 decoration-2"
+				>Beranda</NuxtLink
+			>
+			<NuxtLink
+				to="/project"
+				class="hover:underline underline-offset-2 decoration-wavy decoration-orange-600 decoration-2"
+				>Proyek</NuxtLink
+			>
+			<NuxtLink
+				to="/product"
+				class="hover:underline underline-offset-2 decoration-wavy decoration-orange-600 decoration-2"
+				>Produk</NuxtLink
+			>
+			<NuxtLink
+				to="/about"
+				class="hover:underline underline-offset-2 decoration-wavy decoration-orange-600 decoration-2"
+				>Tentang Kami</NuxtLink
+			>
 		</div>
 		<div class="block mr-5 lg:hidden">
 			<button @click="isOpen = true" :class="[isOpen ? 'hidden' : 'block']">
