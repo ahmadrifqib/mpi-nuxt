@@ -34,11 +34,27 @@
 			</button>
 		</div>
 	</div>
-	<div :class="[isOpen ? 'flex' : 'hidden', 'flex-col space-y-5 text-xl font-semibold']">
-		<NuxtLink to="/" class="hover:underline underline-offset-2">Beranda</NuxtLink>
-		<NuxtLink to="/project" class="hover:underline underline-offset-2">Proyek</NuxtLink>
-		<NuxtLink to="/product" class="hover:underline underline-offset-2">Produk</NuxtLink>
-		<NuxtLink to="/about" class="hover:underline underline-offset-2">Tentang Kami</NuxtLink>
+	<div :class="[isOpen ? 'flex mb-5' : 'hidden', 'flex-col space-y-0 text-xl font-semibold']">
+		<NuxtLink
+			to="/"
+			class="px-5 py-3 border-t border-b border-orange-200 hover:border hover:border-b-4 hover:border-orange-400 hover:rounded-lg hover:bg-orange-200"
+			>Beranda</NuxtLink
+		>
+		<NuxtLink
+			to="/project"
+			class="px-5 py-3 border-b border-orange-200 hover:border hover:border-b-4 hover:border-orange-400 hover:rounded-lg hover:bg-orange-200"
+			>Proyek</NuxtLink
+		>
+		<NuxtLink
+			to="/product"
+			class="px-5 py-3 border-b border-orange-200 hover:border hover:border-b-4 hover:border-orange-400 hover:rounded-lg hover:bg-orange-200"
+			>Produk</NuxtLink
+		>
+		<NuxtLink
+			to="/about"
+			class="px-5 py-3 border-b border-orange-200 hover:border hover:border-b-4 hover:border-orange-400 hover:rounded-lg hover:bg-orange-200"
+			>Tentang Kami</NuxtLink
+		>
 	</div>
 </template>
 

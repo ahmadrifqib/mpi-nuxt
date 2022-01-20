@@ -1,4 +1,6 @@
 import { v as vue_cjs_prod, r as require$$0, s as serverRenderer } from '../index.mjs';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import SwiperCore, { Autoplay, Pagination, Navigation } from 'swiper';
 import 'unenv/runtime/mock/proxy';
 import 'stream';
 
@@ -3040,10 +3042,10 @@ const _export_sfc = (sfc, props) => {
   }
   return target;
 };
-const _sfc_main$a = {
+const _sfc_main$b = {
   name: "NuxtNestedPage"
 };
-function _sfc_ssrRender$a(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+function _sfc_ssrRender$b(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_RouterView = vue_cjs_prod.resolveComponent("RouterView");
   _push(serverRenderer.exports.ssrRenderComponent(_component_RouterView, _attrs, {
     default: vue_cjs_prod.withCtx(({ Component }, _push2, _parent2, _scopeId) => {
@@ -3062,13 +3064,13 @@ function _sfc_ssrRender$a(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
     _: 1
   }, _parent));
 }
-const _sfc_setup$a = _sfc_main$a.setup;
-_sfc_main$a.setup = (props, ctx) => {
+const _sfc_setup$b = _sfc_main$b.setup;
+_sfc_main$b.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/nuxt3/dist/pages/runtime/nested-page.vue");
-  return _sfc_setup$a ? _sfc_setup$a(props, ctx) : void 0;
+  return _sfc_setup$b ? _sfc_setup$b(props, ctx) : void 0;
 };
-const NuxtNestedPage = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["ssrRender", _sfc_ssrRender$a]]);
+const NuxtNestedPage = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["ssrRender", _sfc_ssrRender$b]]);
 const layouts = {
   "default": vue_cjs_prod.defineAsyncComponent({ suspensible: false, loader: () => Promise.resolve().then(function() {
     return _default$1;
@@ -3091,7 +3093,7 @@ const NuxtLayout = vue_cjs_prod.defineComponent({
     };
   }
 });
-const _sfc_main$9 = {
+const _sfc_main$a = {
   name: "NuxtPage",
   components: { NuxtLayout },
   props: {
@@ -3116,7 +3118,7 @@ const _sfc_main$9 = {
     };
   }
 };
-function _sfc_ssrRender$9(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+function _sfc_ssrRender$a(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_RouterView = vue_cjs_prod.resolveComponent("RouterView");
   const _component_NuxtLayout = vue_cjs_prod.resolveComponent("NuxtLayout");
   _push(serverRenderer.exports.ssrRenderComponent(_component_RouterView, _attrs, {
@@ -3200,13 +3202,13 @@ function _sfc_ssrRender$9(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
     _: 1
   }, _parent));
 }
-const _sfc_setup$9 = _sfc_main$9.setup;
-_sfc_main$9.setup = (props, ctx) => {
+const _sfc_setup$a = _sfc_main$a.setup;
+_sfc_main$a.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/nuxt3/dist/pages/runtime/page.vue");
-  return _sfc_setup$9 ? _sfc_setup$9(props, ctx) : void 0;
+  return _sfc_setup$a ? _sfc_setup$a(props, ctx) : void 0;
 };
-const NuxtPage = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["ssrRender", _sfc_ssrRender$9]]);
+const NuxtPage = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["ssrRender", _sfc_ssrRender$a]]);
 const routes = [
   {
     "name": "about",
@@ -3224,6 +3226,15 @@ const routes = [
     "children": [],
     "component": () => Promise.resolve().then(function() {
       return index$1;
+    })
+  },
+  {
+    "name": "paginate",
+    "path": "/paginate",
+    "file": "/Users/ahmadrifqib/Developer/mpi/pages/paginate.vue",
+    "children": [],
+    "component": () => Promise.resolve().then(function() {
+      return paginate$1;
     })
   },
   {
@@ -3649,13 +3660,13 @@ const _plugins = [
   nitroClient_0c357a70,
   components_515c5644
 ];
-const _sfc_main$8 = {
+const _sfc_main$9 = {
   setup() {
     const nuxtApp = useNuxtApp();
     nuxtApp.hooks.callHookWith((hooks) => hooks.map((hook) => hook()), "vue:setup");
   }
 };
-function _sfc_ssrRender$8(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+function _sfc_ssrRender$9(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_App = vue_cjs_prod.resolveComponent("App");
   serverRenderer.exports.ssrRenderSuspense(_push, {
     default: () => {
@@ -3664,14 +3675,14 @@ function _sfc_ssrRender$8(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
     _: 1
   });
 }
-const _sfc_setup$8 = _sfc_main$8.setup;
-_sfc_main$8.setup = (props, ctx) => {
+const _sfc_setup$9 = _sfc_main$9.setup;
+_sfc_main$9.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/nuxt3/dist/app/components/nuxt-root.vue");
-  return _sfc_setup$8 ? _sfc_setup$8(props, ctx) : void 0;
+  return _sfc_setup$9 ? _sfc_setup$9(props, ctx) : void 0;
 };
-const RootComponent = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["ssrRender", _sfc_ssrRender$8]]);
-const _sfc_main$7 = {
+const RootComponent = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["ssrRender", _sfc_ssrRender$9]]);
+const _sfc_main$8 = {
   setup() {
     useMeta({
       title: "Mixa Perkasa Indoensia",
@@ -3686,19 +3697,19 @@ const _sfc_main$7 = {
     });
   }
 };
-function _sfc_ssrRender$7(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+function _sfc_ssrRender$8(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_NuxtPage = vue_cjs_prod.resolveComponent("NuxtPage");
   _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "antialiased bg-orange-50" }, _attrs))}>`);
   _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtPage, null, null, _parent));
   _push(`</div>`);
 }
-const _sfc_setup$7 = _sfc_main$7.setup;
-_sfc_main$7.setup = (props, ctx) => {
+const _sfc_setup$8 = _sfc_main$8.setup;
+_sfc_main$8.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("app.vue");
-  return _sfc_setup$7 ? _sfc_setup$7(props, ctx) : void 0;
+  return _sfc_setup$8 ? _sfc_setup$8(props, ctx) : void 0;
 };
-const AppComponent = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["ssrRender", _sfc_ssrRender$7]]);
+const AppComponent = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["ssrRender", _sfc_ssrRender$8]]);
 let entry;
 const plugins = normalizePlugins(_plugins);
 {
@@ -3718,13 +3729,19 @@ const bootstrap$1 = /* @__PURE__ */ Object.freeze({
   "default": bootstrap
 });
 const _imports_0 = "/_nuxt/assets/MPI.d3c0f33c.png";
-const _sfc_main$6 = {};
-function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+const _sfc_main$7 = {
+  data() {
+    return {
+      isOpen: false
+    };
+  }
+};
+function _sfc_ssrRender$7(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_NuxtLink = vue_cjs_prod.resolveComponent("NuxtLink");
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "flex items-center justify-between px-20 py-3 mx-auto bg-orange-50" }, _attrs))}><div><img class="w-auto h-16"${serverRenderer.exports.ssrRenderAttr("src", _imports_0)} alt="Mixa Perkasa Indonesia logo"></div><div class="text-xl font-semibold">`);
+  _push(`<!--[--><div class="flex items-center justify-between py-3 mx-auto bg-orange-50"><div class="ml-5 lg:ml-0"><img class="w-auto h-16"${serverRenderer.exports.ssrRenderAttr("src", _imports_0)} alt="Mixa Perkasa Indonesia logo"></div><div class="hidden space-x-5 text-xl font-semibold lg:block">`);
   _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, {
     to: "/",
-    class: "mr-5 hover:underline underline-offset-2"
+    class: "hover:underline underline-offset-2"
   }, {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -3739,7 +3756,7 @@ function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
   }, _parent));
   _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, {
     to: "/project",
-    class: "mr-5 hover:underline underline-offset-2"
+    class: "hover:underline underline-offset-2"
   }, {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -3754,7 +3771,7 @@ function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
   }, _parent));
   _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, {
     to: "/product",
-    class: "mr-5 hover:underline underline-offset-2"
+    class: "hover:underline underline-offset-2"
   }, {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -3769,7 +3786,7 @@ function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
   }, _parent));
   _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, {
     to: "/about",
-    class: "mr-5 hover:underline underline-offset-2"
+    class: "hover:underline underline-offset-2"
   }, {
     default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -3782,91 +3799,256 @@ function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
     }),
     _: 1
   }, _parent));
-  _push(`</div></div>`);
+  _push(`</div><div class="block mr-5 lg:hidden"><button class="${serverRenderer.exports.ssrRenderClass([$data.isOpen ? "hidden" : "block"])}"><svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button><button class="${serverRenderer.exports.ssrRenderClass([$data.isOpen ? "block" : "hidden"])}"><svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button></div></div><div class="${serverRenderer.exports.ssrRenderClass([$data.isOpen ? "flex" : "hidden", "flex-col space-y-5 text-xl font-semibold"])}">`);
+  _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, {
+    to: "/",
+    class: "hover:underline underline-offset-2"
+  }, {
+    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(`Beranda`);
+      } else {
+        return [
+          vue_cjs_prod.createTextVNode("Beranda")
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, {
+    to: "/project",
+    class: "hover:underline underline-offset-2"
+  }, {
+    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(`Proyek`);
+      } else {
+        return [
+          vue_cjs_prod.createTextVNode("Proyek")
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, {
+    to: "/product",
+    class: "hover:underline underline-offset-2"
+  }, {
+    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(`Produk`);
+      } else {
+        return [
+          vue_cjs_prod.createTextVNode("Produk")
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, {
+    to: "/about",
+    class: "hover:underline underline-offset-2"
+  }, {
+    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(`Tentang Kami`);
+      } else {
+        return [
+          vue_cjs_prod.createTextVNode("Tentang Kami")
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(`</div><!--]-->`);
 }
-const _sfc_setup$6 = _sfc_main$6.setup;
-_sfc_main$6.setup = (props, ctx) => {
+const _sfc_setup$7 = _sfc_main$7.setup;
+_sfc_main$7.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("components/Header.vue");
-  return _sfc_setup$6 ? _sfc_setup$6(props, ctx) : void 0;
+  return _sfc_setup$7 ? _sfc_setup$7(props, ctx) : void 0;
 };
-const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["ssrRender", _sfc_ssrRender$6]]);
+const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["ssrRender", _sfc_ssrRender$7]]);
 const Header = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": __nuxt_component_0
 });
-const _sfc_main$5 = {};
-function _sfc_ssrRender$5(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "px-20 py-3 bg-orange-50" }, _attrs))}><div class="my-5"><img${serverRenderer.exports.ssrRenderAttr("src", _imports_0)} alt="Mixa Perkasa Indonesia logo" class="w-auto h-36"></div><div class="flex items-start justify-between mx-auto my-5 tracking-wide"><div class=""><div class="text-3xl font-semibold mb-7">Perusahaan</div><div class="mb-3 text-lg font-medium hover:underline underline-offset-4 decoration-2"><a href="">Tentang</a></div><div class="mb-3 text-lg font-medium hover:underline underline-offset-4 decoration-2"><a href="">Proyek</a></div><div class="mb-3 text-lg font-medium hover:underline underline-offset-4 decoration-2"><a href="">Produk</a></div></div><div class="w-2/5"><div class="mb-3 text-2xl font-bold uppercase">PT Mixa Perkasa Indonesia</div><div class="mb-4"> Emerald Avenue Comercial Park Blok EA-A27 Jl. Boulevard CBD Bintaro, RT. 003 RW. 007, Perigi Pondok Aren, Kota Tangerang Selatan Banten </div><div class="mb-4"><td><tr> Email </tr><tr> : </tr><tr> mpi@mixaperkasa.com </tr></td><div><tr> Telp </tr><tr> : </tr><tr> (021) 22210200 </tr></div></div></div></div><div class="flex items-center justify-center my-5 text-lg font-semibold"> \xA92022 PT Mixa Perkasa Indonesia </div></div>`);
+const _sfc_main$6 = {};
+function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "py-3 bg-orange-50" }, _attrs))}><div class="my-5"><img${serverRenderer.exports.ssrRenderAttr("src", _imports_0)} alt="Mixa Perkasa Indonesia logo" class="w-auto h-36"></div><div class="flex items-start justify-between mx-auto my-5 tracking-wide"><div class="space-y-3"><div class="text-3xl font-semibold mb-7">Perusahaan</div><div class="text-lg font-medium hover:underline underline-offset-4 decoration-2"><a href="">Tentang</a></div><div class="text-lg font-medium hover:underline underline-offset-4 decoration-2"><a href="">Proyek</a></div><div class="text-lg font-medium hover:underline underline-offset-4 decoration-2"><a href="">Produk</a></div></div><div class="w-2/5"><div class="mb-3 text-2xl font-bold uppercase">PT Mixa Perkasa Indonesia</div><div class="mb-4"> Emerald Avenue Comercial Park Blok EA-A27 Jl. Boulevard CBD Bintaro, RT. 003 RW. 007, Perigi Pondok Aren, Kota Tangerang Selatan Banten </div><div class="mb-4"><td><tr> Email </tr><tr> : </tr><tr> mpi@mixaperkasa.com </tr></td><div><tr> Telp </tr><tr> : </tr><tr> (021) 222 10 280 </tr></div></div></div></div><div class="flex items-center justify-center my-5 text-lg font-semibold"> \xA92022 PT Mixa Perkasa Indonesia </div></div>`);
 }
-const _sfc_setup$5 = _sfc_main$5.setup;
-_sfc_main$5.setup = (props, ctx) => {
+const _sfc_setup$6 = _sfc_main$6.setup;
+_sfc_main$6.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("components/Footer.vue");
-  return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
+  return _sfc_setup$6 ? _sfc_setup$6(props, ctx) : void 0;
 };
-const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender$5]]);
+const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["ssrRender", _sfc_ssrRender$6]]);
 const Footer = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": __nuxt_component_1
 });
-const _sfc_main$4 = { components: { Header: __nuxt_component_0, Footer: __nuxt_component_1 } };
-function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+const _sfc_main$5 = { components: { Header: __nuxt_component_0, Footer: __nuxt_component_1 } };
+function _sfc_ssrRender$5(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_Header = __nuxt_component_0;
   const _component_Footer = __nuxt_component_1;
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "" }, _attrs))}>`);
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "p-0 lg:mx-auto xl:px-20 container-none lg:container" }, _attrs))}>`);
   _push(serverRenderer.exports.ssrRenderComponent(_component_Header, null, null, _parent));
-  _push(`<div class="container mx-auto">`);
+  _push(`<div class="">`);
   serverRenderer.exports.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
   _push(`</div>`);
   _push(serverRenderer.exports.ssrRenderComponent(_component_Footer, null, null, _parent));
   _push(`</div>`);
 }
-const _sfc_setup$4 = _sfc_main$4.setup;
-_sfc_main$4.setup = (props, ctx) => {
+const _sfc_setup$5 = _sfc_main$5.setup;
+_sfc_main$5.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("layouts/default.vue");
-  return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : void 0;
+  return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
 };
-const _default = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["ssrRender", _sfc_ssrRender$4]]);
+const _default = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender$5]]);
 const _default$1 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": _default
 });
-const _sfc_main$3 = {};
-function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "container flex flex-col justify-center tracking-wider leading-relaxed text-center mb-10" }, _attrs))}><div class="h-96 w-auto mb-10 flex justify-center text-center items-center"><div>Image</div></div><div class="mx-52 text-justify font-light text-xl"><p class="mb-10"> Berawal dari sebuah usaha dalam lingkup kecil yang mempunyai pengalaman dalam bidang pembangunan dan pekerasan tanah, sekarang berkembang menjadi sebuah perusahaan yang bergerak di bidang Kontraktor Renovasi, Bangunan Baru, Interior Design dan Pekerjaan Landscape. </p><p class="mb-10"> Komitmen PT MPI (Mixa Perkasa Indonesia) untuk menyelesaikan setiap karya konstruksi yang telah dipercayakan, tidak terlepas dari peran setiap anggota dalam melakukan perencanaan, pelaksanaan, dan pengendalian proyek dengan berbagai manajemen dan metode konstruksi yang efektif, efisien, serta memperhatikan standar K3 (Keselamatan Kesehatan Kerja) dan lingkungan kerja. </p><p class="mb-10"> Dengan didukung oleh tenaga professional dan terlatih dalam bidangnya maka MPI selalu mengedepankan kwalitas dan kecepatan serta harga yang terbaik untuk seluruh klien MPI. </p><p class="mb-10"> Kiprah MPI dalam merampungkan karya-karya konstruksi juga tidak akan berjalan dengan baik tanpa adanya dukungan dan kerjasama yang baik dengan seluruh mitra kerja perusahaan (Supplier Material, Subkontraktor, Pihak Perbankan, dan SDM yang memiliki kompetensi yang tinggi) </p></div><div class="mx-52"><div class="mb-10"><div class="text-6xl font-bold my-5">VISI</div><div class="text-xl font-light"> Menjadi perusahaan Kontraktor terpercaya yang dikenal akan integritas tinggi, selalu berinovasi dan memuaskan pelayanan pada kepuasan klien. </div></div><div class=""><div class="text-6xl font-semibold my-5">MISI</div><ul class="text-xl text-left list-disc px-10 font-light"><li> Selalu melakukan perubahan sesuai dengan nilai-nilai perkembangan Pembangunan di Dunia Modern. </li><li>Memberikan kepercayaan dengan berdasarkan Kualitas, ketepatan, serta Harga yang kompetitif.</li><li>Memberikan kepuasan kepada klien dengan standar kualitas yang tinggi.</li></ul></div></div></div>`);
+const _sfc_main$4 = {};
+function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "container flex flex-col justify-center mb-10 leading-relaxed tracking-wider text-center" }, _attrs))}><div class="flex items-center justify-center w-auto mb-10 text-center h-96"><img class="object-cover object-center w-full h-full" src="https://picsum.photos/300
+" alt="examples"></div><div class="mx-5 text-xl font-light text-justify md:mx-14 lg:mx-52"><p class="mb-10"> Berawal dari sebuah usaha dalam lingkup kecil yang mempunyai pengalaman dalam bidang pembangunan dan pekerasan tanah, sekarang berkembang menjadi sebuah perusahaan yang bergerak di bidang Kontraktor Renovasi, Bangunan Baru, Interior Design dan Pekerjaan Landscape. </p><p class="mb-10"> Komitmen PT MPI (Mixa Perkasa Indonesia) untuk menyelesaikan setiap karya konstruksi yang telah dipercayakan, tidak terlepas dari peran setiap anggota dalam melakukan perencanaan, pelaksanaan, dan pengendalian proyek dengan berbagai manajemen dan metode konstruksi yang efektif, efisien, serta memperhatikan standar K3 (Keselamatan Kesehatan Kerja) dan lingkungan kerja. </p><p class="mb-10"> Dengan didukung oleh tenaga professional dan terlatih dalam bidangnya maka MPI selalu mengedepankan kwalitas dan kecepatan serta harga yang terbaik untuk seluruh klien MPI. </p><p class="mb-10"> Kiprah MPI dalam merampungkan karya-karya konstruksi juga tidak akan berjalan dengan baik tanpa adanya dukungan dan kerjasama yang baik dengan seluruh mitra kerja perusahaan (Supplier Material, Subkontraktor, Pihak Perbankan, dan SDM yang memiliki kompetensi yang tinggi) </p></div><div class="mx-3 md:mx-14 lg:mx-52"><div class="mb-10"><div class="my-5 text-6xl font-bold">VISI</div><div class="text-xl font-light"> Menjadi perusahaan Kontraktor terpercaya yang dikenal akan integritas tinggi, selalu berinovasi dan memuaskan pelayanan pada kepuasan klien. </div></div><div class=""><div class="my-5 text-6xl font-semibold">MISI</div><ul class="px-10 text-xl font-light text-left list-disc"><li> Selalu melakukan perubahan sesuai dengan nilai-nilai perkembangan Pembangunan di Dunia Modern. </li><li>Memberikan kepercayaan dengan berdasarkan Kualitas, ketepatan, serta Harga yang kompetitif.</li><li>Memberikan kepuasan kepada klien dengan standar kualitas yang tinggi.</li></ul></div></div></div>`);
 }
-const _sfc_setup$3 = _sfc_main$3.setup;
-_sfc_main$3.setup = (props, ctx) => {
+const _sfc_setup$4 = _sfc_main$4.setup;
+_sfc_main$4.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("pages/about.vue");
-  return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
+  return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : void 0;
 };
-const about = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$3]]);
+const about = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["ssrRender", _sfc_ssrRender$4]]);
 const about$1 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": about
 });
-const _sfc_main$2 = {};
-function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  _push(`<div${serverRenderer.exports.ssrRenderAttrs(_attrs)}><div class="h-screen w-auto items-center flex justify-center border-2 border-black"><div>Carousel</div></div><div class="h-96 w-auto items-center flex justify-center border-2 border-black">About</div></div>`);
+SwiperCore.use([Autoplay, Pagination, Navigation]);
+const _sfc_main$3 = {
+  components: {
+    Swiper,
+    SwiperSlide
+  },
+  data() {
+    return {};
+  },
+  methods: {}
+};
+function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_swiper = vue_cjs_prod.resolveComponent("swiper");
+  const _component_swiper_slide = vue_cjs_prod.resolveComponent("swiper-slide");
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(_attrs)}><div class="flex items-center content-center justify-center w-auto h-full">`);
+  _push(serverRenderer.exports.ssrRenderComponent(_component_swiper, {
+    class: "items-center content-center w-screen h-auto mx-10 text-center",
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false
+    },
+    pagination: {
+      clickable: true
+    },
+    navigation: true
+  }, {
+    default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(serverRenderer.exports.ssrRenderComponent(_component_swiper_slide, null, {
+          default: vue_cjs_prod.withCtx((_2, _push3, _parent3, _scopeId2) => {
+            if (_push3) {
+              _push3(`<img class="object-cover object-center w-full h-96" src="https://picsum.photos/300" alt="random"${_scopeId2}>`);
+            } else {
+              return [
+                vue_cjs_prod.createVNode("img", {
+                  class: "object-cover object-center w-full h-96",
+                  src: "https://picsum.photos/300",
+                  alt: "random"
+                })
+              ];
+            }
+          }),
+          _: 1
+        }, _parent2, _scopeId));
+        _push2(serverRenderer.exports.ssrRenderComponent(_component_swiper_slide, null, {
+          default: vue_cjs_prod.withCtx((_2, _push3, _parent3, _scopeId2) => {
+            if (_push3) {
+              _push3(`<img class="object-cover object-center w-full h-96" src="https://picsum.photos/seed/picsum/300" alt="random"${_scopeId2}>`);
+            } else {
+              return [
+                vue_cjs_prod.createVNode("img", {
+                  class: "object-cover object-center w-full h-96",
+                  src: "https://picsum.photos/seed/picsum/300",
+                  alt: "random"
+                })
+              ];
+            }
+          }),
+          _: 1
+        }, _parent2, _scopeId));
+      } else {
+        return [
+          vue_cjs_prod.createVNode(_component_swiper_slide, null, {
+            default: vue_cjs_prod.withCtx(() => [
+              vue_cjs_prod.createVNode("img", {
+                class: "object-cover object-center w-full h-96",
+                src: "https://picsum.photos/300",
+                alt: "random"
+              })
+            ]),
+            _: 1
+          }),
+          vue_cjs_prod.createVNode(_component_swiper_slide, null, {
+            default: vue_cjs_prod.withCtx(() => [
+              vue_cjs_prod.createVNode("img", {
+                class: "object-cover object-center w-full h-96",
+                src: "https://picsum.photos/seed/picsum/300",
+                alt: "random"
+              })
+            ]),
+            _: 1
+          })
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(`</div><div class="flex items-center justify-center w-auto border-2 border-black h-96">About</div></div>`);
 }
-const _sfc_setup$2 = _sfc_main$2.setup;
-_sfc_main$2.setup = (props, ctx) => {
+const _sfc_setup$3 = _sfc_main$3.setup;
+_sfc_main$3.setup = (props, ctx) => {
   const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = new Set())).add("pages/index.vue");
-  return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
+  return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
 };
-const index = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender$2]]);
+const index = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$3]]);
 const index$1 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": index
+});
+const _sfc_main$2 = {};
+function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(_attrs)}></div>`);
+}
+const _sfc_setup$2 = _sfc_main$2.setup;
+_sfc_main$2.setup = (props, ctx) => {
+  const ssrContext = vue_cjs_prod.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = new Set())).add("pages/paginate.vue");
+  return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
+};
+const paginate = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender$2]]);
+const paginate$1 = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": paginate
 });
 const _sfc_main$1 = {};
 function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
