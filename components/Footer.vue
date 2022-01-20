@@ -1,7 +1,7 @@
 <template>
 	<div class="py-3 mx-10 md:mx-5 lg:mx-auto bg-orange-50">
 		<div class="my-5">
-			<img src="/static/MPI.png" alt="Mixa Perkasa Indonesia logo" class="w-auto h-36" />
+			<img src="/static/MPI.png" class="w-auto h-36" />
 		</div>
 		<div class="flex flex-col items-start justify-between my-5 tracking-wide md:mx-5 lg:mx-auto lg:flex-row">
 			<div class="md:w-4/5 lg:w-2/5">

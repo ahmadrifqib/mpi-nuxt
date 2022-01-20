@@ -1,7 +1,7 @@
 <template>
 	<div class="flex items-center justify-between py-3 mx-auto bg-orange-50">
 		<div class="ml-5 lg:ml-0">
-			<img class="w-auto h-16" src="static/MPI.png" alt="Logo" />
+			<img class="w-auto h-16" src="/static/MPI.png" />
 		</div>
 		<div class="hidden space-x-5 text-xl font-semibold lg:block">
 			<NuxtLink
