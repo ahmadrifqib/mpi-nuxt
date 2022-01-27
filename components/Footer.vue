@@ -4,7 +4,7 @@
 			<img src="/static/MPI.png" class="w-auto h-36" />
 		</div>
 		<div class="flex flex-col items-start justify-between my-5 tracking-wide md:mx-5 lg:mx-auto lg:flex-row">
-			<div class="md:w-4/5 lg:w-2/5">
+			<div class="md:w-4/5 lg:w-3/5">
 				<div class="mb-3 text-2xl font-bold uppercase">PT Mixa Perkasa Indonesia</div>
 				<div class="mb-4">
 					Emerald Avenue Comercial Park Blok EA-A27 Jl. Boulevard CBD Bintaro, RT. 003 RW. 007, Perigi Pondok
@@ -35,20 +35,32 @@
 					</div>
 				</div>
 			</div>
-			<div class="mt-10 space-y-2 md:space-y-3 lg:mt-0">
+			<!-- <div class="mt-10 space-y-2 md:space-y-3 lg:mt-0">
 				<div class="mb-4 text-3xl font-semibold lg:mb-7">Perusahaan</div>
-				<div class="text-lg font-medium hover:underline underline-offset-4 decoration-orange-600 decoration-2">
-					<NuxtLink to="/about">Tentang</NuxtLink>
+				<div>
+					<NuxtLink
+						class="text-lg font-medium hover:underline underline-offset-4 decoration-orange-600 decoration-2"
+						to="/about"
+						>Tentang</NuxtLink
+					>
 				</div>
-				<div class="text-lg font-medium hover:underline underline-offset-4 decoration-orange-600 decoration-2">
-					<NuxtLink to="/project">Proyek</NuxtLink>
+				<div>
+					<NuxtLink
+						class="text-lg font-medium hover:underline underline-offset-4 decoration-orange-600 decoration-2"
+						to="/project"
+						>Proyek</NuxtLink
+					>
 				</div>
-				<div class="text-lg font-medium hover:underline underline-offset-4 decoration-orange-600 decoration-2">
-					<NuxtLink to="/product">Produk</NuxtLink>
+				<div>
+					<NuxtLink
+						class="text-lg font-medium hover:underline underline-offset-4 decoration-orange-600 decoration-2"
+						to="/product"
+						>Produk</NuxtLink
+					>
 				</div>
-			</div>
+			</div> -->
 		</div>
-		<div class="flex items-center justify-center my-5 text-lg font-semibold">
+		<div class="flex items-center justify-center pt-5 mb-5 text-lg font-semibold border-t-4 border-white">
 			&copy;2022 PT Mixa Perkasa Indonesia
 		</div>
 	</div>

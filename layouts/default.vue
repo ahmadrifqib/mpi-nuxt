@@ -1,17 +1,22 @@
 <template>
-	<div class="p-0 lg:mx-auto xl:px-20 container-none lg:container">
-		<Header />
-		<div class="">
+	<div class="p-0 lg:mx-auto container-none">
+		<Header class="sticky top-0 z-20 drop-shadow-lg" />
+		<div class="z-0">
 			<slot />
 		</div>
-		<Footer />
+		<Footer class="xl:px-20 lg:px-10" />
 	</div>
 </template>
 
 <script>
 	import Header from "~~/components/Header.vue";
 	import Footer from "~~/components/Footer.vue";
-	export default { components: { Header, Footer } };
+	export default {
+		components: {
+			Header,
+			Footer,
+		},
+	};
 </script>
 
 <style></style>
