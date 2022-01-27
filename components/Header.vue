@@ -64,31 +64,31 @@
 		<div
 			:class="[
 				isOpen ? 'flex mb-5' : 'hidden',
-				'flex-col space-y-0 text-xl font-semibold absolute h-screen w-screen bg-orange-50 z-10',
+				'flex-col space-y-0 text-3xl text-center font-semibold absolute h-screen w-screen bg-orange-50 z-10',
 			]"
 		>
 			<NuxtLink
 				@click="isOpen = false"
 				to="/"
-				class="px-5 py-3 border-t border-b border-orange-200 hover:border hover:border-b-4 hover:border-orange-400 hover:rounded-lg hover:bg-orange-200"
+				class="py-6 border-orange-200 border-y-2 hover:border-y hover:border-b-4 hover:border-orange-400 hover:bg-orange-200"
 				>Beranda</NuxtLink
 			>
 			<NuxtLink
 				@click="isOpen = false"
 				to="/project"
-				class="px-5 py-3 border-b border-orange-200 hover:border hover:border-b-4 hover:border-orange-400 hover:rounded-lg hover:bg-orange-200"
+				class="py-6 border-b-2 border-orange-200 hover:border-y hover:border-b-4 hover:border-orange-400 hover:bg-orange-200"
 				>Proyek</NuxtLink
 			>
 			<NuxtLink
 				@click="isOpen = false"
 				to="/product"
-				class="px-5 py-3 border-b border-orange-200 hover:border hover:border-b-4 hover:border-orange-400 hover:rounded-lg hover:bg-orange-200"
+				class="py-6 border-b-2 border-orange-200 hover:border-y hover:border-b-4 hover:border-orange-400 hover:bg-orange-200"
 				>Produk</NuxtLink
 			>
 			<NuxtLink
 				@click="isOpen = false"
 				to="/about"
-				class="px-5 py-3 border-b border-orange-200 hover:border hover:border-b-4 hover:border-orange-400 hover:rounded-lg hover:bg-orange-200"
+				class="py-6 border-b-2 border-orange-200 hover:border-y hover:border-b-4 hover:border-orange-400 hover:bg-orange-200"
 				>Tentang Kami</NuxtLink
 			>
 		</div>
