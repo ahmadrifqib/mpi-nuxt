@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div class="flex items-center content-center justify-center w-auto h-full">
+		<div class="relative flex items-center content-center justify-center w-auto h-full">
 			<swiper
 				class="z-0 items-center content-center w-full mx-10 text-center shadow-2xl"
 				style="height: 40rem"
@@ -15,18 +15,13 @@
 				}"
 			>
 				<swiper-slide
-					><img
-						class="object-cover object-center w-screen h-auto"
-						src="https://picsum.photos/300"
-						alt="random"
+					><img class="object-cover object-center w-screen h-screen" src="~~/assets/mixa01.jpeg" alt="random"
 				/></swiper-slide>
 				<swiper-slide
-					><img
-						class="object-cover object-center w-screen h-auto"
-						src="https://picsum.photos/seed/picsum/300"
-						alt="random"
+					><img class="object-cover object-center w-screen h-screen" src="~~/assets/mixa02.jpeg" alt="random"
 				/></swiper-slide>
 			</swiper>
+			<div class="bottom-0 left-0 z-10 hidden w-16 h-16 bg-white">asd</div>
 		</div>
 		<div
 			class="flex flex-col-reverse items-stretch justify-center w-auto py-20 space-x-4 tracking-wide md:py-24 lg:py-36 bg-gray-100/50 lg:flex-row"
@@ -58,7 +53,7 @@
 	</div>
 </template>
 
-<script>
+<script lang="js">
 	import { Swiper, SwiperSlide } from "swiper/vue";
 	// import Swiper core and required modules
 	import SwiperCore, { Autoplay, Pagination } from "swiper";

@@ -4,7 +4,7 @@
 	</div>
 </template>
 
-<script>
+<script lang="js">
 	export default {
 		setup() {
 			useMeta({
@@ -16,7 +16,7 @@
 						name: "PT Mixa Perkasa Indonesia",
 					},
 				],
-				link: [{ rel: "icon", type: "image/x-icon", href: "/static/favicon.ico" }],
+				link: [{ rel: "icon", type: "image/x-icon", href: "~/assets/favicon.ico" }],
 			});
 		},
 	};

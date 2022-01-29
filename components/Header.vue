@@ -2,9 +2,9 @@
 	<div>
 		<div class="flex items-center justify-between py-3 mx-auto bg-orange-50 lg:px-10 xl:px-20">
 			<div class="ml-5 lg:ml-0">
-				<img class="w-auto h-16" src="/static/MPI.png" />
+				<img class="w-auto h-16" src="~/assets/mpi100px.png" />
 			</div>
-			<div class="hidden space-x-5 text-xl font-semibold lg:block">
+			<div class="hidden space-x-5 text-xl font-semibold text-stone-900 lg:block">
 				<NuxtLink
 					to="/"
 					class="hover:underline underline-offset-2 decoration-wavy decoration-orange-600 decoration-2"
