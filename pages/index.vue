@@ -24,32 +24,41 @@
 			<div class="bottom-0 left-0 z-10 hidden w-16 h-16 bg-white">asd</div>
 		</div>
 		<div
-			class="flex flex-col-reverse items-stretch justify-center w-auto py-20 space-x-4 tracking-wide md:py-24 lg:py-36 bg-gray-100/50 lg:flex-row"
+			class="flex flex-col-reverse items-stretch justify-center w-auto py-20 space-x-4 tracking-wide md:py-24 lg:py-36 lg:flex-row"
 		>
-			<div class="grid content-center gap-5 p-5 mx-6 bg-white rounded-lg shadow-lg lg:mx-0 lg:w-3/5">
-				<div
-					class="text-3xl font-bold underline uppercase decoration-orange-500 decoration-2 underline-offset-4"
-				>
-					PT Mixa Perkasa Indonesia
+			<div class="grid content-center gap-5 p-5 mx-6 lg:mx-0 lg:w-3/5">
+				<div class="text-6xl font-semibold tracking-widest capitalize text-stone-800">tentang MIXA</div>
+				<hr class="h-1 text-orange-500 bg-orange-500 rounded-full w-96" />
+				<div class="text-5xl leading-tight text-stone-700/90">
+					PT MIXA Perkasa Indonesia adalah perusahaan yang bergerak di bidang stuktur dan beton.
 				</div>
-				<div>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis autem at commodi inventore
-						corrupti quis perspiciatis repudiandae mollitia rem, suscipit aliquid tempore reiciendis harum
-						placeat earum eaque ullam enim velit!
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ea iusto dolorem voluptatum ipsa
-						alias enim laudantium veniam cum, non totam sit sint velit repudiandae obcaecati quas magnam,
-						corrupti excepturi.
-					</p>
+				<div class="mt-10">
+					<NuxtLink
+						@click="scrollToTop()"
+						to="/about"
+						class="p-5 text-xl font-medium leading-tight tracking-widest transition rounded-lg bg-stone-300/90 text-stone-800/90 hover:bg-stone-400/80 duration-0 hover:duration-300"
+						>Selengkapnya</NuxtLink
+					>
 				</div>
 			</div>
 			<div class="hidden w-auto lg:block">
 				<img src="https://picsum.photos/200" alt="random" class="rounded-lg shadow-lg h-96" />
 			</div>
 		</div>
-		<div></div>
+		<div class="pt-10">
+			<div class="flex flex-col items-center justify-center text-center">
+				<div class="text-4xl font-light tracking-wider uppercase text-stone-800">Lokasi</div>
+				<div class="py-2 pb-10">
+					<hr class="w-48 h-1 text-orange-500 bg-orange-500 rounded-full" />
+				</div>
+			</div>
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d505.1341227572045!2d106.70406578313826!3d-6.274443064078472!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x776d5184b4a01d34!2sPT%20Mixa%20Perkasa%20Indonesia!5e0!3m2!1sid!2sid!4v1643777627807!5m2!1sid!2sid"
+				class="w-full border-none h-96"
+				allowfullscreen=""
+				loading="lazy"
+			></iframe>
+		</div>
 	</div>
 </template>
 
@@ -73,6 +82,10 @@
 		data() {
 			return {};
 		},
-		methods: {},
+		methods: {
+			scrollToTop() {
+				window.scrollTo(0, 0);
+			},
+		},
 	};
 </script>

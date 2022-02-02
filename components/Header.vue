@@ -1,30 +1,14 @@
 <template>
 	<div>
-		<div class="flex items-center justify-between py-3 mx-auto bg-orange-50 lg:px-10 xl:px-20">
+		<div class="flex items-center justify-between py-1 mx-auto bg-orange-50/90 lg:px-10 xl:px-20">
 			<div class="ml-5 lg:ml-0">
 				<img class="w-auto h-16" src="~/assets/mpi100px.png" />
 			</div>
-			<div class="hidden space-x-5 text-xl font-semibold text-stone-900 lg:block">
-				<NuxtLink
-					to="/"
-					class="hover:underline underline-offset-2 decoration-wavy decoration-orange-600 decoration-2"
-					>Beranda</NuxtLink
-				>
-				<NuxtLink
-					to="/project"
-					class="hover:underline underline-offset-2 decoration-wavy decoration-orange-600 decoration-2"
-					>Proyek</NuxtLink
-				>
-				<NuxtLink
-					to="/product"
-					class="hover:underline underline-offset-2 decoration-wavy decoration-orange-600 decoration-2"
-					>Produk</NuxtLink
-				>
-				<NuxtLink
-					to="/about"
-					class="hover:underline underline-offset-2 decoration-wavy decoration-orange-600 decoration-2"
-					>Tentang Kami</NuxtLink
-				>
+			<div class="hidden space-x-5 text-2xl font-semibold text-stone-500 lg:block">
+				<NuxtLink @click="scrollToTop()" to="/" class="hover:text-stone-800">Beranda</NuxtLink>
+				<NuxtLink @click="scrollToTop()" to="/project" class="hover:text-stone-800">Proyek</NuxtLink>
+				<NuxtLink @click="scrollToTop()" to="/product" class="hover:text-stone-800">Produk</NuxtLink>
+				<NuxtLink @click="scrollToTop()" to="/about" class="hover:text-stone-800">Tentang Kami</NuxtLink>
 			</div>
 			<div class="block mr-5 lg:hidden">
 				<button @click="isOpen = true" :class="[isOpen ? 'hidden' : 'block']">
@@ -64,29 +48,29 @@
 		<div
 			:class="[
 				isOpen ? 'flex mb-5' : 'hidden',
-				'flex-col space-y-0 text-3xl text-center font-semibold absolute h-screen w-screen bg-orange-50 z-10',
+				'flex-col space-y-0 text-3xl text-center font-semibold absolute h-screen w-screen bg-orange-50 z-10 lg:hidden',
 			]"
 		>
 			<NuxtLink
-				@click="isOpen = false"
+				@click="(isOpen = false), scrollToTop()"
 				to="/"
 				class="py-6 border-orange-200 border-y-2 hover:border-y hover:border-b-4 hover:border-orange-400 hover:bg-orange-200"
 				>Beranda</NuxtLink
 			>
 			<NuxtLink
-				@click="isOpen = false"
+				@click="(isOpen = false), scrollToTop()"
 				to="/project"
 				class="py-6 border-b-2 border-orange-200 hover:border-y hover:border-b-4 hover:border-orange-400 hover:bg-orange-200"
 				>Proyek</NuxtLink
 			>
 			<NuxtLink
-				@click="isOpen = false"
+				@click="(isOpen = false), scrollToTop()"
 				to="/product"
 				class="py-6 border-b-2 border-orange-200 hover:border-y hover:border-b-4 hover:border-orange-400 hover:bg-orange-200"
 				>Produk</NuxtLink
 			>
 			<NuxtLink
-				@click="isOpen = false"
+				@click="(isOpen = false), scrollToTop()"
 				to="/about"
 				class="py-6 border-b-2 border-orange-200 hover:border-y hover:border-b-4 hover:border-orange-400 hover:bg-orange-200"
 				>Tentang Kami</NuxtLink
@@ -102,11 +86,14 @@
 				isOpen: false,
 			};
 		},
-		// methods: {
-		// 	navbar: function () {
-		// 		!this.isOpen;
-		// 	},
-		// },
+		methods: {
+			scrollToTop() {
+				window.scrollTo(0, 0);
+			},
+			// 	navbar: function () {
+			// 		!this.isOpen;
+			// 	},
+		},
 	};
 </script>
 

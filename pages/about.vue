@@ -1,10 +1,7 @@
 <template>
 	<div class="flex flex-col justify-center mb-10 leading-relaxed tracking-wider text-center">
 		<div class="flex items-center justify-center w-auto mb-10 text-center h-96">
-			<img
-				class="object-cover object-center w-full h-full rounded-lg shadow-2xl"
-				src="https://picsum.photos/300"
-			/>
+			<img class="object-cover object-bottom w-full h-full shadow-2xl" src="~/assets/mpi-site.jpeg" />
 		</div>
 		<div class="mx-auto container-none lg:container">
 			<div class="mx-5 text-xl font-light text-justify md:mx-14 lg:mx-52">
@@ -56,7 +53,13 @@
 </template>
 
 <script>
-	export default {};
+	export default {
+		setup() {
+			useMeta({
+				title: "Tentang Kami | Mixa Perkasa Indonesia",
+			});
+		},
+	};
 </script>
 
 <style></style>
